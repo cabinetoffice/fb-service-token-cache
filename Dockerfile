@@ -3,7 +3,7 @@ FROM ruby:3.2.3-alpine3.19
 RUN apk add build-base bash libcurl sqlite sqlite-dev sqlite-libs tzdata
 RUN apk add --no-cache gcompat
 
-ADD https://storage.googleapis.com/kubernetes-release/release/v1.18.2/bin/linux/amd64/kubectl /usr/local/bin/kubectl
+ADD https://storage.googleapis.com/kubernetes-release/release/v1.30.0/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 
 ENV HOME=/config
 
